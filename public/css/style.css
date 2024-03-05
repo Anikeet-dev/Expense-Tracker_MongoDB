@@ -1,0 +1,41 @@
+
+.expenseItem-btn {
+    position: absolute;
+    right: 10px;
+}
+.premium-user-text {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background: white;
+    padding: 10px;
+}
+.leaderboard-btn {
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    margin: 10px;
+}
+.download-expense-btn {
+    position: fixed;
+    top: 92px;
+    right: 20px;
+    margin: 10px;
+}
+.expense-container {
+    position: relative;
+    width: 50%;
+    left: 100px;
+
+}
+#user-leaderboard {
+    position: absolute;
+    top: 28%;
+    right: 270px;
+    padding: 10px;
+}
+
+li{
+    margin: 20px 0px;
+}

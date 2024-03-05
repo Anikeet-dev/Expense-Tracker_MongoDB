@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Expense Tracker</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <header class="d-flex justify-content-between align-items-center p-4">
+        <h1>Expense Tracker</h1>
+        <button type="submit" id="rzp-btn" class="btn btn-primary ms-auto me-3">Buy Premium</button>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    </header>
+    <form action="" id="my-form">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label for="amount">Choose Expense Amount</label>
+                    <input type="number" name="" id="amount">
+                </div>
+                <div class="col">
+                    <label for="amount">Discription</label><br>
+                    <input type="text" name="" id="discription">
+                </div>
+                <div class="col">
+                    <label for="category">Category</label>
+                    <select class="form-select" id="category">
+                        <option selected>Open this select menu</option>
+                        <option value="Fuel">Fuel</option>
+                        <option value="Electricity">Electricity</option>
+                        <option value="Movie">Movie</option>
+                    </select>
+                </div>
+                <div class="col gy-4">
+                    <button type="submit" class="btn btn-dark">Add Expense</button>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="expense-container">
+        <h6>Expenses :</h6>
+        <ol id="expense-list">
+
+        </ol>
+
+        <div id="pagination-container"></div>
+
+        <label for="displayCount">Display Count:</label>
+        <select id="displayCount" class="pagination-select">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+
+
+    </div>
+
+    <div id="user-leaderboard">
+
+    </div>
+
+
+
+
+    <script src="/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+
+</body>
+
+</html>

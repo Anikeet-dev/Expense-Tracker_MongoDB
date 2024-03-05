@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-container {
+    max-height: 52vh;
+    position: absolute;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.form-container form {
+    width: 20.5rem;
+    margin-top: 1.5rem;
+
+}
+
+.input-box {
+    margin-top: 0.8rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-box label {
+    display: block;
+    color: rgba(156, 163, 175, 1);
+    margin-bottom: 4px;
+}
+
+.input-box input {
+    width: 87%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    outline: 0;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+}
+
+#signup-Btn {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgba(167, 139, 250, 1);
+    padding: 0.75rem;
+    text-align: center;
+    border: none;
+    color: rgba(17, 24, 39, 1);
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+#signup-Btn:hover {
+    cursor: pointer;
+    background-color: rgb(203, 198, 217);
+
+}
+
+#error-message {
+    color: rgb(152, 53, 53);
+    padding-top: 4px;
+}
+
+.goto-text {
+    color: rgba(156, 163, 175, 1);
+    margin-top: 6px;
+    font-size: 0.875rem;
+}
+
+#goto-signup {
+    color: #e8e8e8;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(17, 24, 39, 1);
+    font-size: 0.875rem;
+
+}
+
+#goto-signup:hover {
+    cursor: pointer;
+    color: rgba(156, 163, 175, 1);
+    font-weight: 548;
+}
+
+.forgot-Password-Btn {
+    margin-top: 1.6rem;
+    padding: 0;
+    color: #e8e8e8;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(17, 24, 39, 1);
+    font-size: 0.875rem;
+}
+
+.forgot-Password-Btn:hover {
+    cursor: pointer;
+    color: rgba(156, 163, 175, 1);
+    font-weight: 548;
+}
