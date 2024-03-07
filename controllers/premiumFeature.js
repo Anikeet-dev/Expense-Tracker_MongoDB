@@ -1,5 +1,4 @@
 const User = require('../models/user');
-const Expense = require('../models/expense');
 
 exports.getUserLeaderBoard = async (req, res) => {
     try {

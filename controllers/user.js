@@ -125,12 +125,12 @@ exports.forgotPasswordVerification = async (req, res, next) => {
 };
 
 exports.resetPasswordForm = async (req, res, next) => {
-    const id = req.params.id;
+    const _id = req.params._id;
     try {
-        const response = await ForgotPasswordModel.findOne({ _id: id });
+        const response = await ForgotPasswordModel.findOne({ _id: _id });
 
         if (response) {
-            const updationOfactive = await ForgotPasswordModel.updateOne({ _id: id }, { active: false });
+            const updationOfactive = await ForgotPasswordModel.updateOne({ _id: _id }, { active: false });
 
             if (updationOfactive) {
                 return res.status(200).send(`
@@ -139,7 +139,7 @@ exports.resetPasswordForm = async (req, res, next) => {
               console.log("Passing the form to updatePassword");
             </script>
 
-            <form action="/password/updatepassword/${id}" method="post" enctype="application/x-www-form-urlencoded">
+            <form action="/password/updatepassword/${_id}" method="post" enctype="application/x-www-form-urlencoded">
 
             <label for="newpassword">Enter New password</label>
             <input name="newpassword" type="password" required></input>

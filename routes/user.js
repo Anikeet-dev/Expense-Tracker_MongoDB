@@ -22,9 +22,9 @@ router.post('/password/verification',userController.forgotPasswordVerification);
 
 router.post('/password/resetpassword',userController.resettingPassword);
 
-router.get('/password/resetpasswordform/:id',userController.resetPasswordForm);
+router.get('/password/resetpasswordform/:_id',userController.resetPasswordForm);
 
-router.post('/password/updatepassword/:id', userController.updatePassword);
+router.post('/password/updatepassword/:_id', userController.updatePassword);
 
 
 module.exports = router;
